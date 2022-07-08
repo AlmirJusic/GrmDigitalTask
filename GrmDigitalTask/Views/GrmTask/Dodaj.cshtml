@@ -1,0 +1,27 @@
+﻿@model GrmTaskDodajVM;
+
+<form asp-action="Snimi" method="post">
+    
+
+
+    <div class="form-group col-md-6">
+        <label>Name</label>
+        <select asp-for="ID1" asp-items="Model.GrmTaskList1" class="form-control">Odaberi</select>
+
+        <input asp-for="Prvi" class="form-control" />
+        <span asp-validation-for="Prvi" class="text-danger"></span>
+
+    </div>
+
+    <div class="form-group col-md-6">
+        <label>Name</label>
+        <select asp-for="ID2" asp-items="Model.GrmTaskList2" class="form-control">Odaberi</select>
+
+        <input asp-for="Drugi" class="form-control" />
+        <span asp-validation-for="Drugi" class="text-danger"></span>
+
+    </div>
+
+
+    <input type="submit" value="Snimi" class="btn btn-primary" />
+</form>
